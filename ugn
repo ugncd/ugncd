@@ -1,1 +1,38 @@
+const NFTs = [
+    {
+        name:"Movie",
+        title: "Back to the Future",
+        genre: "Scifi",
+        year: "1985"
+    }
+
+        
+];
+
+function mintNFT(nft) {
+  NFTs.push(nft);
+  return nft;
+}
+
+function listNFTs() {
+  for (let i = 0; i < NFTs.length; i++) {
+    console.log(NFTs[1]);
+  }
+  console.log("---------------------");
+}
+
+function getTotalSupply() {
+  console.log("Total Supply: " + NFTs.length);
+  console.log("---------------------");
+}
+
+listNFTs();
+
+mintNFT({name: "Movie", title: "The Flash", genre: "Science Fiction", year: "2023"});
+mintNFT({name: "Movie", title: "Ant Man and the Wasp Quantumania", genre: "Science Fiction", year: "2023"});
+mintNFT({name: "Movie", title: "Thor Love and Thunder", genre: "Science Fiction", year: "2022"});
+mintNFT({name: "Movie", title: "Interstellar", genre: "Science Fiction", year: "2014"});
+listNFTs();
+
+getTotalSupply();
 
