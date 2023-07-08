@@ -1,38 +1,44 @@
-const NFTs = [
-    {
-        name:"Movie",
-        title: "Back to the Future",
-        genre: "Scifi",
-        year: "1985"
-    }
+// create a variable to hold your NFT's
+const NFTs = [];
 
-        
-];
+// this function will take in some values as parameters, create an
+// NFT object using the parameters passed to it for its metadata, 
+// and store it in the variable above.
+function mintNFT(name, title, genre, year) {
+  const nft = {
+    name: name,
+    title: title,
+    genre: genre,
+    year: year
+  };
 
-function mintNFT(nft) {
   NFTs.push(nft);
   return nft;
 }
 
+// create a "loop" that will go through an "array" of NFT's
+// and print their metadata with console.log()
 function listNFTs() {
   for (let i = 0; i < NFTs.length; i++) {
-    console.log(NFTs[1]);
+    console.log(NFTs[i]);
   }
   console.log("---------------------");
 }
 
+// print the total number of NFTs we have minted to the console
 function getTotalSupply() {
   console.log("Total Supply: " + NFTs.length);
   console.log("---------------------");
 }
 
+// call your functions below this line
+
 listNFTs();
 
-mintNFT({name: "Movie", title: "The Flash", genre: "Science Fiction", year: "2023"});
-mintNFT({name: "Movie", title: "Ant Man and the Wasp Quantumania", genre: "Science Fiction", year: "2023"});
-mintNFT({name: "Movie", title: "Thor Love and Thunder", genre: "Science Fiction", year: "2022"});
-mintNFT({name: "Movie", title: "Interstellar", genre: "Science Fiction", year: "2014"});
+mintNFT("Movie", "The Flash", "Science Fiction", "2023");
+mintNFT("Movie", "Ant Man and the Wasp Quantumania", "Science Fiction", "2023");
+mintNFT("Movie", "Thor Love and Thunder", "Science Fiction", "2022");
+mintNFT("Movie", "Interstellar", "Science Fiction", "2014");
 listNFTs();
 
 getTotalSupply();
-
