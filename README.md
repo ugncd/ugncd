@@ -1,3 +1,5 @@
+This is my assessment for JS Proof: Beginner course
+
 - 👋 Hi, I’m @ugncd
 - 👀 I’m interested in different stuff.
 - 🌱 I’m currently studying at NTC.
